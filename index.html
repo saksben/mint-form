@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mint Form</title>
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+        <!--This is form-making pactice based on Mint.com's sign-up form at href="https://accounts.intuit.com/signup.html?offering_id=Intuit.ifs.mint&namespace_id=50000026&redirect_url=https%3A%2F%2Fmint.intuit.com%2Foverview.event%3Ftask%3DS". Accuracy was not the goal; resemblance was-->
+    </head>
+    <body>
+        <div id="page-wrap">
+            <nav id="navbar">
+                <div id="navbar-items">
+                    <div id="already-text">
+                    <p>Already have an Intuit account?</p>
+                    <a id="forgot-password" href="https://accounts.intuit.com/account-recovery.html?offering_id=Intuit.ifs.mint&namespace_id=50000026&redirect_url=https%3A%2F%2Fmint.intuit.com%2Foverview.event%3Ftask%3DS">I forgot my user ID or Password</a>
+                    </div>
+                    <a href="#" id="sign-in-link">
+                        <button id="sign-in">
+                            <img id="already-lock" src="icons/lock.png">
+                            <p>Sign In</p>
+                        </button>
+                    </a>
+                </div>
+            </nav>
+            <header>
+                <img id="logo" src="icons/logos.png"> <!--Yes, I was lazy and put a screenshot of the logos here. If I had the original logo files, I would just make a container div, housing 2 centered div boxes-->
+            </header>
+            <main id="main">
+                <form>
+                    <header id="title-info">
+                        <h1>Create an Intuit account</h1>
+                        <p>One account for everything Intuit, including Mint.</p>
+                        <p><a class="blue-link" href="https://accounts-help.intuit.com/app/intuit/1995107">Learn More</a></p>
+                    </header>
+                    <label class="form-label" for="email">Email address</label>
+                    <input id="email" class="input" name="email" type="email">
+                    <label class="form-label" form="phone">Phone (recommended)</label>
+                    <input id="phone" class="input" name="phone" type="tel">
+                    <label id="rate-disclaimer" for="phone" class="form-label" >Standard call, messaging or data rates may apply.</label>
+                    <label class="form-label" for="password">Password</label>
+                    <input id="password" class="input" name="password" type="password">
+                    <button id="submit" type="submit" value="Create Account">
+                        <img id="submit-lock" src="icons/lock.png">
+                        <p>Create Account</p>
+                    </button>
+                    <div id="terms-box">
+                        <p id="terms"><em>By selecting Create Account, you agree to our <a class="blue-link" href="https://mint.intuit.com/terms">Terms</a> and have read and acknowledge our <a class="blue-link" href="https://www.intuit.com/privacy/statement/">Global Privacy Statement</a></em></p>
+                    </div>
+                </form>
+                <div id="captcha-box">
+                    <p id="captcha-disclaimer">Invisible reCAPTCHA by Google <a class="blue-link" href="https://policies.google.com/privacy?hl=en">Privacy Policy</a> and <a class="blue-link" href="https://policies.google.com/terms?hl=en">Terms of Use</a></p>
+                </div>
+            </main>
+            <div id="privacy-wrap">
+                <ul id="disclaimer-buttons">
+                    <li><a class="blue-link">Legal</a></li>
+                    <li><a class="blue-link">Privacy</a></li>
+                    <li><a class="blue-link">Security</a></li>
+                </ul>
+                <p id="copyright">© 2021 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.
+                </p>
+                <p id="ownership-disclaimer">Terms and conditions, features, support, pricing, and service options subject to change without notice.
+                </p>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <nav id="footer-navbar">
+            <ul id="footer-link">
+                <li><a class="blue-link" href="#">Privacy Settings</a></li>
+            </ul>
+        </nav>
+    </footer>
+</html>
